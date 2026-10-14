@@ -23,7 +23,7 @@ if(st.button("fetch weather")):
         country =data['sys']['country']
 
         st.subheader(f'{name},{country}')
-    #CREATE 2COL AND 2 ROWS
+        #CREATE 2COL AND 2 ROWS
         col1,col2=st.columns(2)
         col3,col4=st.columns(2)
 
@@ -32,5 +32,5 @@ if(st.button("fetch weather")):
         col3.metric('Windspeed🍃',f'{wind_speed}')
         col4.metric('Weather Condition🌧️',f'{weather_condition}')
 
-else:
-    st.error("ENTER VALID CITY")
+    else:
+        st.error("ENTER VALID CITY")
